@@ -11,9 +11,194 @@
     --titleColor:hsl(233, 26%, 24%);
     --backgroundButton:hsl(136, 65%, 51%);
     --navbarColor:hsl(220, 16%, 96%);
+    --easyBankArea:hsl(220, 16%, 96%);
     --white:hsl(0, 0%, 100%);
     --fontColor:hsl(233, 8%, 62%);
-    --hoover:hsl(136, 65%, 51%);
+    --hover:hsl(136, 65%, 51%);
     
     /* --degrade:hsl(192, 70%, 51%);*/
+}
+
+/* - Classes que serão reaproveitadas
+   - Classes that will be reused
+*/
+
+.titleColor{
+    color: var(--titleColor);
+}
+
+.fontColor{
+    color: var(--fontColor);
+}
+
+.mainButton{
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--backgroundButton);
+    color: var(--white);
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.541);
+    opacity: 0.5;
+    transition: 0.3s all;
+}
+
+.mainButton:hover{
+    opacity: 1;
+}
+
+.navbar{
+    background-color: var(--navbarColor);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 60px;
+    position: absolute;
+    width: 100%;
+}
+
+.nav-links-desktop{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links-desktop li {
+    padding: 0 15px;
+}
+
+.nav-links-desktop a,
+.nav-links-mobile a {
+  color: var(--fontColor);
+  text-decoration: none;
+  transition: 0.3s;
+  border-bottom: 2px solid transparent;
+  padding: 5px;
+}
+
+.nav-links-desktop a:hover{
+    border-bottom: 1px solid var(--hover);
+}
+
+.mobile-menu{
+    display: none;
+    position: fixed;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: var(--navbarColor);
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.8rem;
+    z-index: 5;
+}
+
+.nav-links-mobile{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.2rem;
+    width: 80%;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links-mobile li {
+    border-bottom: 1px solid #787272;
+    padding-bottom: 1.2rem;
+}
+
+.hamburger,
+.close {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+.close {
+  margin-top: 20px;
+  margin-right: 20px;
+  display: block;
+  align-self: end;
+}
+
+.flex {
+  display: flex;
+}
+
+.area-1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content{
+    width: 450px;
+    padding: 10px 20px;
+}
+
+.content h1{
+   font-size: 45px;
+   font-weight: 400;
+}
+
+.content p{
+    margin-top: 3%;
+    font-weight: 400;
+    line-height: 1.5rem;
+ }
+
+ .content button{
+    margin-top: 5%;
+ }
+
+.img{
+    background-image: url(../images/bg-intro-desktop.svg);
+    background-size: cover;
+}
+
+.description-bank{
+    width: 600px;
+    padding: 15px;
+}
+
+.titleBank{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.area-2{
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--easyBankArea);
+}
+
+.easybank{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.options{
+    padding: 15px; 
+    width: 250px;
+}
+
+.options h4{
+    font-size: 20px;
+    font-size: 500;
+}
+
+.options,h4,p{
+    margin-top: 5%;
 }
