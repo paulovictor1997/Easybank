@@ -10,11 +10,12 @@
 :root{
     --titleColor:hsl(233, 26%, 24%);
     --backgroundButton:hsl(136, 65%, 51%);
-    --navbarColor:hsl(220, 16%, 96%);
+    --navbarColor:hsl(220, 14%, 96%);
     --easyBankArea:hsl(220, 16%, 96%);
     --white:hsl(0, 0%, 100%);
     --fontColor:hsl(233, 8%, 62%);
     --hover:hsl(136, 65%, 51%);
+    --backgroundFooter:hsl(233, 26%, 24%);
     
     /* --degrade:hsl(192, 70%, 51%);*/
 }
@@ -201,4 +202,110 @@
 
 .options,h4,p{
     margin-top: 5%;
+}
+
+.articleTitle{
+    padding: 15px;
+    margin-top: 8%;
+    font-weight: 400;
+}
+
+article{
+    width: 100%;
+    margin-top: 5%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.articles{
+    width: 250px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.articles a{
+    transition: 0.3s all;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.articles p{
+   line-height: 1.5rem;
+}
+
+
+.articles span, a, p{
+    margin-top: 5%;
+}
+
+.articles a:hover{
+    color: var(--hover);
+}
+
+.articles img{
+    width: 300px;
+}   
+
+footer{
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: var(--backgroundFooter);
+}
+
+
+.icons-logo{
+    padding: 10px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.icons-logo a{
+    transition: 0.3s all;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.icons-logo i{
+    color: var(--white); 
+}
+
+.icons-logo a i:hover{
+   color: var(--hover);
+}
+
+.links-footer{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.links-footer a{
+    transition: 0.3s all;
+    margin-top: 10px ;
+    text-decoration: none;
+    color: var(--fontColor);
+}
+
+.links-footer a:hover{
+    color: var(--hover);
+}
+
+.copy{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.copy span{
+   color: var(--fontColor);
 }
