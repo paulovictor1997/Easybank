@@ -85,7 +85,7 @@
 
 .mobile-menu{
     display: none;
-    position: fixed;
+    position: absolute;
     right: 0;
     width: 50%;
     height: 100%;
@@ -104,6 +104,7 @@
     width: 80%;
     list-style: none;
     padding: 0;
+    background-color: var(--navbarColor);
 }
 
 .nav-links-mobile li {
@@ -116,7 +117,6 @@
   font-size: 24px;
   background: none;
   border: none;
-  color: #fff;
   cursor: pointer;
   display: none;
 }
