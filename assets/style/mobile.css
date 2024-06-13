@@ -76,6 +76,7 @@
     }
     
     footer{
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -90,5 +91,21 @@
     .copy{
         margin-top: 5%;
     }
+    
+}
+
+@media (max-width:530px) {
+    .img {
+        width: 100%;
+        background-image: url(../images/bg-intro-desktop.svg);
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+
+    .img img {
+        width: 400px;
+    }
+
     
 }
