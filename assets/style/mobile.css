@@ -31,15 +31,15 @@
      }
 
     .img{
-        width: 100%;
+        width: 50%;
         background-image: url(../images/bg-intro-mobile.svg);
         background-size: cover;
         background-position: top center;
-        margin-left: 6%;
     }
 
     .img img {
-        width: 500px;
+        width: 300px;
+        margin-left: 10%;
     }
     
 
