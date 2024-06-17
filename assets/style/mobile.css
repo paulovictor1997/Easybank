@@ -1,4 +1,4 @@
-@media  (max-width:1200px) {
+@media  (max-width:1000px) {
     .nav-links-desktop{
         display: none;
     }
@@ -109,11 +109,51 @@
         background-size: auto;
         background-repeat: no-repeat;
         background-position: left center;
+       
     }
 
     .img img {
-        width: 400px;
+        width: 300px;
+        margin-left: 10%;
     }
 
     
+}
+
+@media (max-width: 400px) {
+    .nav-links-desktop, .hamburger, .hidenButton, .area-1, .content, .img, .area-2, .description-bank, .titleBank, .easybank, .options, article, footer, .links-footer a, .copy {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .content {
+        padding: 5px 10px;
+    }
+
+    .content h1 {
+        font-size: 18px;
+    }
+
+    .img img {
+        width: 100%;
+        max-width: 250px;
+        margin-left: 0;
+    }
+
+    .description-bank {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .titleBank {
+        font-size: 18px;
+    }
+
+    .links-footer a {
+        padding: 3px;
+    }
+
+    .copy {
+        margin-top: 3%;
+    }
 }
